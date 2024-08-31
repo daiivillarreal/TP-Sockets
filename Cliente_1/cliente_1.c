@@ -37,11 +37,11 @@ int main() {
     }
 
     while (1) {
-        printf("Elige una opciÛn:\n\n");
+        printf("Elige una opci√≥n:\n\n");
         printf("1. Generar usuario\n");
-        printf("2. Generar ContraseÒa\n");
+        printf("2. Generar Contrase√±a\n");
         printf("0. Salir\n");
-        printf("\nOpciÛn ingresada: ");
+        printf("\nOpci√≥n ingresada: ");
         scanf("%d", &option);
 
         if (option == 0) {
@@ -51,9 +51,9 @@ int main() {
         printf("Ingrese longitud: ");
         scanf("%d", &longitud);
 
-        // ValidaciÛn de longitud para evitar enviar valores no v·lidos
+        // Validaci√≥n de longitud para evitar enviar valores no v√°lidos
         if (longitud < 1) {
-            printf("Longitud inv·lida.\n");
+            printf("Longitud inv√°lida.\n");
             continue;
         }
 
@@ -74,13 +74,13 @@ int main() {
             printf("Error al recibir datos.\n");
             break;
         } else if (recvLen == 0) {
-            printf("El servidor cerrÛ la conexiÛn.\n");
+            printf("El servidor cerr√≥ la conexi√≥n.\n");
             break;
         }
 
         buffer[recvLen] = '\0'; // Null-terminar el buffer
         printf("\nRespuesta: %s\n", buffer);
-        printf("Presione una tecla para volver al men˙...\n");
+        printf("Presione una tecla para volver al men√∫...\n");
         getch();
         system("cls");
     }
