@@ -22,18 +22,16 @@ def main():
 
             if option == '0':
                 break
-
-            longitud = input("Ingrese longitud: ")
-
-            try:
+            elif option == '1' or option=='2':
+                longitud = input("Ingrese longitud: ")
+        
                 longitud = int(longitud)
                 if longitud < 1:
                     print("Longitud inválida.")
                     continue
-            except ValueError:
-                print("Por favor ingrese un número válido para la longitud.")
-                continue
-
+            else:
+                print("Opción inválida.")
+                break
             # Crear mensaje para enviar al servidor
             message = "{} {}".format(option, longitud)
 
