@@ -116,7 +116,7 @@ int main() {
         } else if (option == 2) {
             crearClave(len, response);
         } else {
-            strcpy(response, "Error: Opción inválida");
+            strcpy(option, "Error: Opción inválida");
         }
 
         send(clientSocket, response, strlen(response), 0);
