@@ -21,7 +21,7 @@ void crearUsuario(int len, char* usuario) {
     const char *consonantes = "bcdfghjklmnpqrstvwxyz";
 
     if (len >= 5 && len <= 15) {
-        int vocal = rand() % 2; // 0 o 1 para la primera posición
+        int vocal = rand() % 2; // 0 o 1 para la primera posiciÃ³n
 
         for (int i = 0; i < len; i++) {
             if (vocal) {
@@ -114,7 +114,7 @@ int main() {
         } else if (option == 2) {
             crearClave(len, response);
         } else {
-            strcpy(response, "Error: Opción inválida");
+            strcpy(response, "Error: OpciÃ³n invÃ¡lida");
         }
 
         send(clientSocket, response, strlen(response), 0);
