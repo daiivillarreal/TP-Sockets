@@ -11,7 +11,7 @@ int main() {
     SOCKET sock;
     struct sockaddr_in serverAddr;
     char buffer[256];
-    int option, longitud;
+    int option = 0, longitud;
     setlocale(LC_CTYPE, "");
 
     if (WSAStartup(MAKEWORD(2, 2), &wsaData) != 0) {
@@ -37,6 +37,7 @@ int main() {
     }
 
     while (1) {
+
         printf("Elige una opción:\n\n");
         printf("1. Generar usuario\n");
         printf("2. Generar Contraseña\n");
@@ -47,9 +48,14 @@ int main() {
         if (option == 0) {
             break;
         }
-
-        printf("Ingrese longitud: ");
-        scanf("%d", &longitud);
+        else if(option==1 || option ==2){
+            printf("\nIngrese longitud: ");
+            scanf("%d", &longitud);
+        }else{
+            printf("\nOpción inválida.\nPresione una tecla para salir...\n");
+            getch();
+            break;
+        }
 
         // Validación de longitud para evitar enviar valores no válidos
         if (longitud < 1) {
