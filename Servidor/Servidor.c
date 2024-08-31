@@ -33,6 +33,7 @@ void crearUsuario(int len, char* usuario) {
             }
         }
         usuario[len] = '\0';
+        printf("\nUsuario generado: %s\n", usuario);
     } else {
         strcpy(usuario, "Error: Longitud fuera de rango");
     }
@@ -46,6 +47,7 @@ void crearClave(int len, char* clave) {
             clave[i] = traerCaracter(caracteres);
         }
         clave[len] = '\0';
+        printf("\nContraseña generada: %s\n", clave);
     } else {
         strcpy(clave, "Error: Longitud fuera de rango");
     }
