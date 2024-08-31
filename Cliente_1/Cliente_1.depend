@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1725081876 source:c:\users\daian\onedrive\documents\unla\distribuidos\cliente_1\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<winsock2.h>
+	<locale.h>
+
+1725083717 source:c:\users\daian\onedrive\documents\unla\distribuidos\tp-distribuidos\cliente_1\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<winsock2.h>
+	<locale.h>
+
