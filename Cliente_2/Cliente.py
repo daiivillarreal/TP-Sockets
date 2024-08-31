@@ -23,11 +23,11 @@ def main():
             if option == '0':
                 break
 
-            length = input("Enter length: ")
+            longitud = input("Ingrese longitud: ")
 
             try:
-                length = int(length)
-                if length < 1:
+                longitud = int(longitud)
+                if longitud < 1:
                     print("Longitud inválida.")
                     continue
             except ValueError:
@@ -35,7 +35,7 @@ def main():
                 continue
 
             # Crear mensaje para enviar al servidor
-            message = "{} {}".format(option, length)
+            message = "{} {}".format(option, longitud)
 
             # Enviar el mensaje al servidor
             client_socket.sendall(message.encode('utf-8'))
